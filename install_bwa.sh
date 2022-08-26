@@ -1,5 +1,4 @@
 #!/bin/bash
-mkdir TOOLS
 cd TOOLS
 git clone https://github.com/lh3/bwa.git
 cd bwa

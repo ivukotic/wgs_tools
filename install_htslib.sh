@@ -1,14 +1,13 @@
 #!/bin/bash
 
-git clone https://github.com/samtools/htslib.git
-mv htslib htslib-source 
-cd htslib-source
+cd TOOLS
+
+git clone https://github.com/samtools/htslib.git 
+cd htslib
 
 git submodule update --init --recursive  
 
 autoreconf -I
-./configure -prefix=/TOOLS/htslib
+./configure
 make
 make install
-
-rm -rf htslib-source
